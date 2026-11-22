@@ -1,0 +1,33 @@
+# Confidential private keys
+private/
+*.key
+*.key.pem
+
+# Generated PKI material
+*.pem
+*.srl
+*.csr
+
+# CA database and runtime state
+intermediate-ca/index.txt*
+intermediate-ca/serial*
+intermediate-ca/crlnumber*
+intermediate-ca/newcerts/
+intermediate-ca/crl/
+
+# Generated reports
+reports/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Backup files
+*.bak
+
+# macOS files
+.DS_Store
+
+# Environment files
+.env
+.venv/

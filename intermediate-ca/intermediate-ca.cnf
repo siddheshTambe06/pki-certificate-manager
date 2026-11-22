@@ -1,0 +1,15 @@
+[req]
+distinguished_name = dn
+prompt = no
+
+[dn]
+C = GB
+L = London
+O = PKI Certificate Manager Lab
+CN = PKI Lab Intermediate CA
+
+[v3_intermediate_ca]
+basicConstraints = critical, CA:true, pathlen:0
+keyUsage = critical, keyCertSign, cRLSign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
